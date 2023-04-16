@@ -20,12 +20,11 @@ java -version
 ![image](https://user-images.githubusercontent.com/114645192/232275191-b518120d-6b9a-4087-b016-6b0f64ff20f0.png)
 
 Step 1 — Installing Jenkins
-curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
   
-  
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
   
 sudo apt-get update
